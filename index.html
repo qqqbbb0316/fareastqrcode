@@ -23,8 +23,8 @@
 
     <div class="max-w-4xl mx-auto">
         <div class="bg-white rounded-2xl shadow-md p-6 mb-8 border border-gray-200">
-            <h1 class="text-xl font-bold mb-2 text-gray-800">批次 QR Code 產生器</h1>
-            <p class="text-gray-500 text-sm mb-4">輸入推薦碼（每行一個），將自動整合文字至圖片中。</p>
+            <h1 class="text-xl font-bold mb-2 text-gray-800">推薦碼與 QR Code 產生器</h1>
+            <p class="text-gray-500 text-sm mb-4">輸入員工編號（每行一個），將自動產生推薦連結與QR CODE</p>
             
             <textarea 
                 id="batchInput" 
@@ -37,7 +37,7 @@
                 id="generateBtn" 
                 class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition shadow-md active:scale-95 disabled:bg-gray-400"
             >
-                產生整合圖片
+                產生QR Code與連結
             </button>
         </div>
 
@@ -163,7 +163,7 @@
             }
 
             generateBtn.disabled = false;
-            generateBtn.textContent = '產生整合圖片';
+            generateBtn.textContent = '產生QR CODE';
         });
 
         function copyToClipboard(text, btn) {
