@@ -152,9 +152,10 @@
                     div.innerHTML = `
                         <img src="${finalImg}" class="w-full h-auto rounded mb-2 shadow-sm">
                         <span class="text-xs font-bold text-gray-500 mb-2">${code}</span>
-                        <button onclick="copyToClipboard('${BASE_URL + encodeURIComponent(code)}', this)" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-600 text-[10px] py-1.5 rounded transition">
+                        <button onclick="copyToClipboard('${BASE_URL + encodeURIComponent(code)}', this)" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-600 text-[10px] py-1.5 rounded transition mb-2">
                             複製連結
                         </button>
+                        <span class="text-xs text-blue-600 break-all">${BASE_URL + encodeURIComponent(code)}</span>
                     `;
                     resultsContainer.appendChild(div);
                 } catch (err) {
